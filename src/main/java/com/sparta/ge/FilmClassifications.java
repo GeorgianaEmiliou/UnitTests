@@ -4,9 +4,6 @@ public class FilmClassifications {
 
     public static String availableClassifications(int ageOfViewer){
         String result;
-        if(ageOfViewer < 8){
-            result = "U, PG";
-        }
        if(ageOfViewer < 12){
             result = "U, PG & 12 films are available.";
         }
