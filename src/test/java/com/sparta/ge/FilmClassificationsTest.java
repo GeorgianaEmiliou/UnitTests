@@ -8,19 +8,19 @@ public class FilmClassificationsTest {
 
     @Test
     @DisplayName("Given age is 10, return U, PG & 12 films are available.")
-    public void givenTheAgeIs10(){
+    public void under12(){
         Assertions.assertEquals("U, PG & 12 films are available.", FilmClassifications.availableClassifications(10));
     }
 
     @Test
     @DisplayName("Given age is 14, return U, PG, 12 & 15 films are available.")
-    public void givenTheAgeIs14(){
+    public void under15(){
         Assertions.assertEquals("U, PG, 12 & 15 films are available.", FilmClassifications.availableClassifications(14));
     }
 
     @Test
     @DisplayName("Given age is 20, return All films are available.")
-    public void givenTheAgeIs20(){
+    public void over15(){
         Assertions.assertEquals("All films are available.", FilmClassifications.availableClassifications(20));
     }
 }
